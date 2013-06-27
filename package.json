@@ -1,0 +1,33 @@
+{
+    "name": "FIXME",
+    "version": "0.1.0",
+    "description": "A ChlorineJs library designed to ... well, that part is up to you.",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/FIXME/FIXME.git"
+    },
+    "keywords": [
+        "qunit",
+        "chlorinejs",
+        "clojure",
+        "macro"
+    ],
+    "directories": {
+        "lib":  "src"
+    },
+    "devDependencies": {
+        "testem": ">= 0.2.26",
+        "mocha": ">= 1.7.4",
+        "chloric": "0.1.13"
+    },
+    "license": "EPL, LGPL",
+    "scripts": {
+        "watch": "cl2c -d -u profile.cl2 -t 10000 -v -w './src/,./test/' ./test/test_runners.cl2",
+        "compile-test": "cl2c -d -1 -u profile.cl2 -t 10000 -v ./test/test_runners.cl2",
+        "test": "testem -l Firefox ci",
+        "mocha": "testem -l Mocha test_runners.js",
+        "phantomjs": "testem -l phantomjs ci",
+        "ci-test": "testem ci",
+        "livetest": "testem"
+    }
+}
