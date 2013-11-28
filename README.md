@@ -1,5 +1,7 @@
 # ChlorineJs FIXME library
 
+DEPRECATED in favour of an other seed based on [lein-cl2c](https://github.com/chlorinejs/lein-cl2c)
+
 A ChlorineJs library designed to ... well, that part is up to you.
 
 Build status:
